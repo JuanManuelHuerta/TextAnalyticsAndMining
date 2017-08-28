@@ -1,0 +1,11 @@
+ lesson 1:
+
+
+1. Overview
+2. Debate text
+3. Normalize words, regex, tokenize, word count
+4. Stop words, dictionary, pharases
+5. Stemming
+7. Who said what? Basic statistics
+
+
