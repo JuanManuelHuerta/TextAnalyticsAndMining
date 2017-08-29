@@ -1,0 +1,76 @@
+
+Course plan:
+======================================
+1. Fundamental Approaches: text preprocessing, dictionaries, regular expressions
+2. Syntax and POS tagging
+3. Statistical approaches
+4. Advanced: mapreduce, lda,  string edit distance
+
+
+
+Topics for class #2:
+. syntax parsing
+. POS tagging
+. recursion
+. tree
+. depth search first versus breath search first
+. conversational language
+
+
+
+Tools for class #2:
+. POS tagger
+. stanford parser
+
+
+
+
+
+====
+
+1. Lesson 1 review
+
+2. Download a chunk of text (not conversational) [differences between conversational and non-conversational language]:
+curl  https://www.washingtonpost.com/news/the-fix/wp/2016/07/27/president-obamas-speech-at-the-democratic-convention/ > obama-convention.html
+cp l01s01.py  l02s01.py 
+unicode to ascii
+
+
+3. Download stanford parser; 
+
+Read the following stackoverflow entry:
+### Notes: http://stackoverflow.com/questions/13883277/stanford-parser-and-nltk
+Donload:
+http://nlp.stanford.edu/software/lex-parser.shtml#Download
+Download Stanford Parser version 3.6.0
+http://nlp.stanford.edu/software/stanford-parser-full-2015-12-09.zip
+Then extract the models:
+jar xvf stanford-parser-3.6.0-models.jar
+
+4. Syntax Parsing of a couple of sentences using the stanford parser models:
+Visualization and intro example
+l02s2.py
+[Review POS taggings and syntax tags]
+
+
+5. Extract 10  Sentences of Obama corpus, parse and visualize with GUI
+l02s03.py
+
+6. Play with the Tree output: sub-trees, iterate, etc:
+python l02s04.py 3
+
+Tree class:
+http://www.nltk.org/_modules/nltk/tree.html
+Subtrees of height 3
+et cetera
+
+
+7. Extract all subtrees of a specific type:
+python l02s05.py VP
+
+
+8. POS tags only and patterns (e.g., 2 or more)
+python l02s06.py
+
+9. Commnets on Polarity, sentiment, etc.
+
